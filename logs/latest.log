@@ -1,0 +1,189 @@
+[23:26:49] [ServerMain/INFO]: [bootstrap] Running Java 22 (Java HotSpot(TM) 64-Bit Server VM 22.0.1+8-16; Oracle Corporation null) on Mac OS X 15.0 (aarch64)
+[23:26:49] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-5-master@7d7f123 (2024-08-10T22:35:17Z) for Minecraft 1.21.1
+[23:26:49] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[23:26:49] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/Dynmap-3.7-beta-6-spigot.jar'...
+[23:26:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Dynmap-3.7-beta-6-spigot.jar' in 1439ms.
+[23:26:51] [ServerMain/INFO]: [PluginInitializerManager] Initialized 7 plugins
+[23:26:51] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
+ - PaperTweaks (0.5.0-beta.1)
+[23:26:51] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
+ - CrisTreeCapitator (6.4.4), Geyser-Spigot (2.4.1-SNAPSHOT), MiniMOTD (2.1.2), Plan (5.6 build 2883), dynmap (3.7-SNAPSHOT-948), floodgate (2.2.3-SNAPSHOT (b109-49bd564))
+[23:26:53] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23:26:53] [ServerMain/INFO]: Loaded 1290 recipes
+[23:26:53] [ServerMain/INFO]: Loaded 1399 advancements
+[23:26:53] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[23:26:53] [Server thread/INFO]: Loading properties
+[23:26:53] [Server thread/INFO]: This server is running Paper version 1.21.1-5-master@7d7f123 (2024-08-10T22:35:17Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
+[23:26:54] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[23:26:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:26:54] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:26:54] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and population gen parallelism of 2 threads
+[23:26:54] [Server thread/INFO]: Default game type: SURVIVAL
+[23:26:54] [Server thread/INFO]: Generating keypair
+[23:26:54] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:26:54] [Server thread/INFO]: Using default channel type
+[23:26:55] [Server thread/INFO]: Paper: Using libdeflate (macOS ARM64 / Apple Silicon) compression from Velocity.
+[23:26:55] [Server thread/INFO]: Paper: Using native (macOS ARM64 / Apple Silicon) cipher from Velocity.
+[23:26:55] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.3-SNAPSHOT (b109-49bd564)
+[23:26:56] [Server thread/WARN]: [floodgate] en_TH is not a supported Floodgate language.
+[23:26:56] [Server thread/INFO]: [floodgate] Took 1,486ms to boot Floodgate
+[23:26:56] [Server thread/INFO]: [CrisTreeCapitator] Loading server plugin CrisTreeCapitator v6.4.4
+[23:26:56] [Server thread/INFO]: [Plan] Loading server plugin Plan v5.6 build 2883
+[23:26:56] [Server thread/INFO]: [PaperTweaks] Loading server plugin PaperTweaks v0.5.0-beta.1
+[23:26:56] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.4.1-SNAPSHOT
+[23:26:58] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[23:26:58] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[23:26:58] [Server thread/INFO]: [MiniMOTD] Loading server plugin MiniMOTD v2.1.2
+[23:26:58] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-SNAPSHOT-948
+[23:26:58] [Server thread/INFO]: [dynmap] version=1.21.1-5-7d7f123 (MC: 1.21.1)
+[23:26:58] [Server thread/ERROR]: [dynmap] Cannot find [Lnet.minecraft.server.BiomeBase;
+[23:26:58] [Server thread/ERROR]: [dynmap] Cannot find net.minecraft.server.BiomeStorage
+[23:26:58] [Server thread/ERROR]: [dynmap] Unable to find method getHandle for org.bukkit.craftbukkit.CraftChunk
+[23:26:58] [Server thread/ERROR]: [dynmap] Unable to find method getValue for com.mojang.authlib.properties.Property
+[23:26:58] [Server thread/ERROR]: [dynmap] Error loading org.dynmap.bukkit.helper.BukkitVersionHelperCB
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.Helper.loadVersionHelper(Helper.java:15) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.Helper.getHelper(Helper.java:103) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.DynmapPlugin.onLoad(DynmapPlugin.java:900) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Error initializing dynmap - bukkit version incompatible!
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.helper.BukkitVersionHelperGeneric.<init>(BukkitVersionHelperGeneric.java:166) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.helper.BukkitVersionHelperCB.<init>(BukkitVersionHelperCB.java:44) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	... 14 more
+[23:26:58] [Server thread/INFO]: [dynmap] Mod Support API available
+[23:26:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:26:58] [Server thread/INFO]: Preparing level "world"
+[23:26:58] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[23:26:58] [Server thread/INFO]: Time elapsed: 500 ms
+[23:26:58] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[23:26:59] [Server thread/INFO]: Time elapsed: 67 ms
+[23:26:59] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[23:26:59] [Server thread/INFO]: Time elapsed: 39 ms
+[23:26:59] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.3-SNAPSHOT (b109-49bd564)
+[23:26:59] [Server thread/INFO]: [CrisTreeCapitator] Enabling CrisTreeCapitator v6.4.4
+[23:26:59] [Server thread/INFO]: [CrisTreeCapitator] WorldGuard not found. Maybe WorldGuard or this plugin are not up to date?
+[23:26:59] [Server thread/INFO]: [CrisTreeCapitator] Logs from JSON: [OAK_LOG, OAK_LOG, OAK_LOG, OAK_LOG]
+[23:26:59] [Server thread/INFO]: [CrisTreeCapitator] Leaves from JSON: [OAK_LEAVES, OAK_LEAVES, OAK_LEAVES, OAK_LEAVES]
+[23:26:59] [Server thread/INFO]: [CrisTreeCapitator] Enabled
+[23:26:59] [Server thread/INFO]: [Plan] Enabling Plan v5.6 build 2883
+[23:27:00] [Server thread/INFO]: [Plan] 
+[23:27:00] [Server thread/INFO]: [Plan]            ██▌
+[23:27:00] [Server thread/INFO]: [Plan]      ██▌   ██▌
+[23:27:00] [Server thread/INFO]: [Plan]   ██▌██▌██▌██▌  Player Analytics
+[23:27:00] [Server thread/INFO]: [Plan]   ██▌██▌██▌██▌  v5.6 build 2883
+[23:27:00] [Server thread/INFO]: [Plan] 
+[23:27:00] [Server thread/INFO]: [Plan] Locale: 'English' by AuroraLS3
+[23:27:00] [Server thread/INFO]: [Plan] Downloading SQLite Driver, this may take a while...
+[23:27:00] [Plan SQLiteDB-transaction-thread-1/INFO]: [Plan] Database: Making sure schema is up to date..
+[23:27:00] [Server thread/INFO]: [Plan] SQLite-database connection established.
+[23:27:00] [Plan SQLiteDB-transaction-thread-1/INFO]: [Plan] All database patches applied successfully.
+[23:27:01] [Server thread/INFO]: [Plan] WebServer: Certificate KeyStore File not Found: plugins/Plan/Cert.jks
+[23:27:01] [Server thread/INFO]: [Plan] WebServer: No Certificate -> Using HTTP-server for Visualization.
+[23:27:01] [Server thread/INFO]: [Plan] WebServer: User Authorization Disabled! (Not secure over HTTP)
+[23:27:01] [Server thread/INFO]: [Plan] Webserver running on PORT 8804 ( http://localhost:8804 )
+[23:27:01] [Server thread/INFO]: [Plan] Loading server identifying information
+[23:27:01] [Server thread/INFO]: [Plan] Server identifier loaded: f7dd9c49-0d27-4f24-ae92-b510102f7f16
+[23:27:01] [Plan Non critical-pool-3/WARN]: [Plan] Downloading GeoLite2 requires accepting GeoLite2 EULA - see 'Data_gathering.Accept_GeoLite2_EULA' in the config.
+[23:27:01] [Plan Non critical-pool-3/ERROR]: [Plan] Failed to enable geolocation.
+[23:27:01] [Server thread/INFO]: [Plan] Registered extension: Floodgate
+[23:27:01] [Server thread/INFO]: [Plan] Player Analytics Enabled.
+[23:27:01] [Server thread/INFO]: [PaperTweaks] Enabling PaperTweaks v0.5.0-beta.1
+[23:27:01] [Server thread/INFO]: [PaperTweaks] Thank you for using PaperTweaks/VanillaTweaks!
+[23:27:01] [Server thread/INFO]: [PaperTweaks] If you have any issues, please visit one of the following links for support:
+[23:27:01] [Server thread/INFO]: [PaperTweaks]   - https://discord.gg/invite/Np6Pcb78rr
+[23:27:01] [Server thread/INFO]: [PaperTweaks]   - https://github.com/MC-Machinations/VanillaTweaks/issues
+[23:27:02] [Server thread/INFO]: [PaperTweaks] You are using the H2 database type.
+[23:27:02] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23:27:03] [Server thread/INFO]: [PaperTweaks] Loaded 40 modules
+[23:27:03] [Server thread/INFO]: [PaperTweaks] Enabled 13 modules
+[23:27:03] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.4.1-SNAPSHOT
+[23:27:03] [Server thread/INFO]: [MiniMOTD] Enabling MiniMOTD v2.1.2
+[23:27:04] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-SNAPSHOT-948
+[23:27:04] [Server thread/INFO]: [dynmap] Dynmap is disabled (unsupported platform)
+[23:27:04] [Server thread/ERROR]: Error occurred while enabling dynmap v3.7-SNAPSHOT-948 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "org.dynmap.DynmapCore.disableCore()" because "this.core" is null
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.DynmapPlugin.onDisable(DynmapPlugin.java:1094) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at Dynmap-3.7-beta-6-spigot.jar/org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:916) ~[Dynmap-3.7-beta-6-spigot.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-mojangapi-1.21.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.1.jar:1.21.1-5-7d7f123]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[?:?]
+[23:27:04] [Server thread/INFO]: [spark] Starting background profiler...
+[23:27:04] [pool-13-thread-1/WARN]: [floodgate] 
+**********************************
+* The prefix you entered in your Floodgate config (BE | ) is long! (5 characters)
+* A prefix is there to prevent username conflicts. However, a long prefix makes the chance of username conflicts higher.
+* We strongly recommend using . as the prefix, but other alternatives that will not conflict include: +, - and *
+**********************************
+[23:27:04] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[23:27:04] [Server thread/INFO]: [Geyser-Spigot] 
+[23:27:04] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.4.1-b643 (git-master-d3ea651)
+[23:27:04] [Server thread/INFO]: [Geyser-Spigot] 
+[23:27:04] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[23:27:08] [Server thread/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[23:27:08] [Server thread/INFO]: [Geyser-Spigot] Done (4.274s)! Run /geyser help for help!
+[23:27:08] [Server thread/INFO]: Done preparing level "world" (10.644s)
+[23:27:08] [Server thread/INFO]: Running delayed init tasks
+[23:27:08] [Server thread/INFO]: Done (20.454s)! For help, type "help"
+[23:27:08] [Server thread/INFO]: Timings Reset
+[23:27:08] [Craft Scheduler Thread - 3 - Plan/INFO]: [Plan] You're using the latest version.
+[23:28:56] [Server thread/INFO]: Stopping the server
+[23:28:56] [Server thread/INFO]: Stopping server
+[23:28:56] [Server thread/INFO]: [MiniMOTD] Disabling MiniMOTD v2.1.2
+[23:28:56] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.4.1-SNAPSHOT
+[23:28:56] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[23:28:56] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[23:28:56] [Server thread/INFO]: [PaperTweaks] Disabling PaperTweaks v0.5.0-beta.1
+[23:28:56] [Server thread/INFO]: [Plan] Disabling Plan v5.6 build 2883
+[23:28:56] [Server thread/INFO]: [Plan] Processing complete.
+[23:28:56] [Server thread/INFO]: [Plan] Waiting for unfinished transactions to avoid data loss..
+[23:28:56] [Server thread/INFO]: [Plan] Transaction queue closed.
+[23:28:56] [Server thread/INFO]: [Plan] Waiting queries to finish to avoid SQLite crashing JVM..
+[23:28:56] [Server thread/INFO]: [Plan] Closed SQLite connection.
+[23:28:56] [Server thread/INFO]: [Plan] Player Analytics Disabled.
+[23:28:56] [Server thread/INFO]: [CrisTreeCapitator] Disabling CrisTreeCapitator v6.4.4
+[23:28:56] [Server thread/INFO]: [CrisTreeCapitator] Disabled
+[23:28:56] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.3-SNAPSHOT (b109-49bd564)
+[23:28:56] [Server thread/INFO]: Saving players
+[23:28:56] [Server thread/INFO]: Saving worlds
+[23:28:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:28:56] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[23:28:56] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[23:28:56] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[23:28:56] [WebSocketConnectReadThread-126/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world' in 0.18s
+[23:28:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.07s
+[23:28:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[23:28:57] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.06s
+[23:28:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:28:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:28:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:28:57] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
